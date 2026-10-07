@@ -1,8 +1,8 @@
 def describe_day(day):
     match day:
-        case "Saturday" | "Sunday":
+        case "Saturday" | "saturday" | "Sunday" | "sunday":
             return "Weekend"
-        case "Friday":
+        case "Friday" | "friday":
             return "Almost there"
         case _:
             return "Working day"

@@ -4,7 +4,7 @@ REDUCED_RATE = 0.80
 
 
 def payment_due(earnings, days_since_last_post):
-    if earnings >= MINIMUM_EARNINGS and days_since_last_post <= ACTIVE_WITHIN_DAYS:
+    if earnings > MINIMUM_EARNINGS and days_since_last_post < ACTIVE_WITHIN_DAYS:
         return earnings
     elif earnings >= MINIMUM_EARNINGS:
         return earnings * REDUCED_RATE

@@ -2,22 +2,22 @@
 
 
 def is_weekend(day):
-    if day == "Saturday" or "Sunday":
+    if day == "Saturday" or day == "Sunday":
         return True
     return False
 
 
 def can_vote(age):
-    if age > 18:
+    if age >= 18:
         return True
     return False
 
 
 def describe_temperature(celsius):
-    if celsius > 0:
-        return "above freezing"
-    elif celsius > 25:
+    if celsius > 25:
         return "hot"
+    elif celsius > 0:
+        return "above freezing"
     else:
         return "freezing or below"
 
